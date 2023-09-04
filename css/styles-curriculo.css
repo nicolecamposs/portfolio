@@ -1,0 +1,139 @@
+:root {
+    --cor-primaria: #222;
+    --cor-secundaria: #71F09F;
+    --cor-terciaria: #fdfdfd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 0 0 0 20px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    font-size: 1.25rem;
+    padding: 15px;
+    background-color: var(--cor-secundaria);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+nav a:hover {
+    color: var(--cor-secundaria);
+    background-color: var(--cor-terciaria);  
+}
+
+h1 { 
+  color: var(--cor-secundaria); 
+  font-size: 2rem;
+  text-align: center;
+}
+
+p {
+    color: var(--cor-terciaria);
+}
+
+h2 {
+    color: var(--cor-secundaria);
+    padding: 20px;
+}
+
+.introducao {
+    text-align: center;
+}
+
+.meus-dados {
+    text-align: start;
+    padding: 20px 0 0 0; 
+}
+
+.meus-dados a {
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    padding: 5px;
+    background-color: var(--cor-secundaria);
+}
+
+li {
+    padding: 5px;
+}
+
+ul {
+    list-style: none;
+}
+
+.resumo {
+    text-align: justify;
+    padding: 30px 0 0 0;
+}
+
+.resumo p {
+    padding: 0 20px 0 0;
+    line-height: 30px;
+}
+
+.experiencias {
+    padding: 100px 0 0 0;
+}
+
+.formacao {
+    padding: 30px 0 0 0;
+}
+
+.cursos {
+    padding: 30px 0 0 0;
+}
+
+.idiomas {
+    padding: 30px 0 30px 0;
+}
+
+span {
+    color: var(--cor-secundaria);
+    text-transform: uppercase;
+}
+
+footer p {
+    background-color: var(--cor-secundaria);
+    text-align: center;
+    box-sizing: content-box;
+    padding: 20px;
+    font-size: 1.25rem;
+    color: var(--cor-primaria);
+}
+
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    main {
+        width: auto;
+    }
+
+    header {
+        padding: 6%;
+    }
+
+    nav {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,132 @@
+:root {
+    --cor-primaria: #222;
+    --cor-secundaria: #71F09F;
+    --cor-terciaria: #fdfdfd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+    box-sizing: border-box;
+}
+
+header {
+    padding: 2% 1% 0 81%;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    font-size: 1.25rem;
+    padding: 15px;
+    background-color: var(--cor-secundaria);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+nav a:hover {
+    color: var(--cor-secundaria);
+    background-color: var(--cor-terciaria);  
+}
+
+.titulo-destaque {
+    color: var(--cor-secundaria);
+}
+
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao-conteudo {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao-conteudo h1 {
+    font-size: 2.25rem;
+    padding: 25px 0;
+}
+
+.apresentacao-conteudo p {
+    font-size: 1.25rem;
+}
+
+.apresentacao img {
+    width: 35%;
+    border-radius: 15px;
+}
+
+.apresentacao-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    justify-content: space-between;
+}
+
+.apresentacao-links h2 {
+    font-size: 1.56rem;
+}
+
+.apresentacao-links a {
+    text-decoration: none;
+    border: var(--cor-secundaria) solid 2px;
+    padding: 20px 5px;
+    color: var(--cor-terciaria);
+    border-radius: 16px;
+    width: 50%;
+    text-align: center;
+    font-size: 1.12rem;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.apresentacao-links a:hover {
+    border: var(--cor-terciaria) solid 2px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
+
+footer p {
+    background-color: var(--cor-secundaria);
+    text-align: center;
+    box-sizing: content-box;
+    padding: 20px;
+    font-size: 1.25rem;
+    color: var(--cor-primaria);
+}
+
+@media (max-width: 1200px) {
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao-conteudo {
+        width: auto;
+    }
+
+    header {
+        padding: 6%;
+    }
+
+    nav {
+        justify-content: center;
+    }
+}
